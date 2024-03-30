@@ -42,7 +42,7 @@ func (p *Program) TokenLiteral() string {
 }
 
 func (ls *LetStatement) statementNode() {}
-func (ls *LetStatement) TokenLiteral() string { return ls.TokenLiteral()}
+func (ls *LetStatement) TokenLiteral() string { return ls.Token.Literal }
 
-func (l *Identifier) expressionNode() {}
-func (l *Identifier) TokenLiteral() string { return l.TokenLiteral()}
+func (i *Identifier) expressionNode() {}
+func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
